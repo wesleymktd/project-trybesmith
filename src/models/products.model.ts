@@ -17,6 +17,8 @@ export async function create(product: InProduct): Promise<Product> {
   return newProduct;
 }
 
-export function xablau() {
-  return 'xab';
+export async function getAll(): Promise<Product[]> {
+  const query = 'SELECT * FROM Trybesmith.products';
+  const [products] = await connection.execute(query);
+  return products as Product[];
 }

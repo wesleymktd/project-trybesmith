@@ -6,6 +6,7 @@ export async function create(product: Product) {
   return { status: 201, data };
 }
 
-export function xablau() {
-  return 'xab';
+export async function getAll() {
+  const data = await productModel.getAll();
+  return { status: 200, data };
 }

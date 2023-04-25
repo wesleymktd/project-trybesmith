@@ -17,3 +17,9 @@ export interface InUser {
 export interface User extends InUser {
   id: number;
 }
+
+export interface Order {
+  id: number;
+  userId: number;
+  productsIds: number[];
+}

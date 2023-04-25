@@ -6,3 +6,14 @@ export interface InProduct {
 export interface Product extends InProduct {
   id: number;
 }
+
+export interface InUser {
+  username: string;
+  vocation: string;
+  level:string;
+  password: string;
+}
+
+export interface User extends InUser {
+  id: number;
+}

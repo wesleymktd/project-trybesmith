@@ -11,11 +11,6 @@ export default async function login(userCredentials: UserCredential) {
   }
 
   const { id, username } = data;
-  const token = jwt.sign({ id, username }, 'senhaSecreta', config);
+  const token = jwt.sign({ id, username }, 'minhaSenhaSecreta', config);
   return { status: 200, token };
 }
-
-// export async function getAll() {
-//   const data = await productModel.getAll();
-//   return { status: 200, data };
-// }

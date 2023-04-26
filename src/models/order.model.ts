@@ -1,4 +1,4 @@
-// import { ResultSetHeader } from 'mysql2';
+import { ResultSetHeader } from 'mysql2';
 
 import connection from './connection';
 import { Order } from '../interfaces';
@@ -16,12 +16,16 @@ export async function getAll(): Promise<Order[]> {
   return orders as Order[];
 }
 
-// export async function getAll(): Promise<Product[]> {
-//   const query = 'SELECT * FROM Trybesmith.products';
-//   const [products] = await connection.execute(query);
-//   return products as Product[];
-// }
-
-export function xab() {
-  return 'xab';
+export async function createOrder(userId: number, productsIds: number[]) {
+  const query = 'INSERT INTO Trybesmith.orders (user_id) VALUES (?)';
+  const values = [userId];
+  const [{ insertId }] = await connection.execute<ResultSetHeader>(query, values);
+  
+  await Promise.all(productsIds.map((id) => (
+    connection.execute(
+      `UPDATE Trybesmith.products
+      SET order_id = ?
+      WHERE id = ?`,
+      [insertId, id],
+    ))));
 }

@@ -7,6 +7,4 @@ const router = Router();
 
 router.post('/', validateLogin, loginController);
 
-// router.get('/', usersController.getAll);
-
 export default router;

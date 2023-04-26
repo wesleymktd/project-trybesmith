@@ -25,13 +25,3 @@ export async function getByUserName(username: string): Promise<User | null> {
   const [user] = data as User[];
   return user || null;
 }
-
-// export async function getAll(): Promise<Product[]> {
-//   const query = 'SELECT * FROM Trybesmith.products';
-//   const [products] = await connection.execute(query);
-//   return products as Product[];
-// }
-
-export function xab() {
-  return 'xab';
-}

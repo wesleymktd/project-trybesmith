@@ -1,13 +1,31 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+## 🧐 Sobre
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+O projeto TrybeSmith foi um projeto para fins estudantis e foi meu primeiro contato com typeScript.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Nesse projeto eu:
+
+- desenvolvi uma API RESTful com TypeScript e um banco de dados SQL para uma loja;
+- Desenvolvi todas as camadas da aplicação (Models, Service e Controllers) e, através desta aplicação, será possível realizar as operações básicas que podem ser feitas em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão;
+- também foi desenvolvida uma autenticação para o login com o auxílio do JWT.
+
+## Os seguintes endpoints foram desenvolvidos para a aplicação:
+
+- Endpoint para Cadastro de produtos;
+- Endpoint para listar produtos;
+- Endpoint para cadastrar pessoas usuárias;
+- Endpoint para listar todo os pedidos;
+- Endpoint para login das pessoas usuárias;
+- Endpoipnt para registrar um pedido.
+
+## Principais tecnologias utilizadas:
+
+- TypeScript;
+- MySql;
+- Docker;
+- Node.js;
+- Express.js;
+- JWT.
+
+## Contribuição
+
+Criei a pasta src e todo conteúdo dentro dela. Os outros arquivos foram feitos pela Trybe.

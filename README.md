@@ -2,7 +2,7 @@
 
 O projeto TrybeSmith foi um projeto para fins estudantis e foi meu primeiro contato com typeScript.
 
-# Nesse projeto eu:
+## Nesse projeto eu:
 
 - desenvolvi uma API RESTful com TypeScript e um banco de dados SQL para uma loja;
 - Desenvolvi todas as camadas da aplicação (Models, Service e Controllers) e, através desta aplicação, será possível realizar as operações básicas que podem ser feitas em um determinado banco de dados: Criação, Leitura, Atualização e Exclusão;
